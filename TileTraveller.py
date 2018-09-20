@@ -37,7 +37,7 @@ while position != 3.1:
         print("Not a valid direction!")
         villa = villa + 1
     position = round(position, 1)
-     if position == 1.1:
+    if position == 1.1:
         att = "(N)orth."
     if position == 1.2:
         att = "(N)orth or (E)ast or (S)outh."
