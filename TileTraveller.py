@@ -1,14 +1,13 @@
-x,y = 1,1
-
-
-while (x,y != 3,1):
-    if (x == 1 and y == 1):
-        print("You can travel: (N) orth.")
-        direct = input("Direction: ").lower()
-        if direct == "n":
-            y = y + 1
-        else:
-            print("Not a valid direction!")
+position = 1.1
+att = "(N)orth."
+villa = 0
+while position != 3.1:
+    if villa == 1:
+        direction = input("Direction: ").lower()
+        villa = villa - 1
+    else:
+        print("You can travel:", att)
+        direction = input("Direction: ").lower()
 
     if (x == 2 and y == 1):
         print("You can travel: (N) orth.")
