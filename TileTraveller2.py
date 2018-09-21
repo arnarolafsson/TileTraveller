@@ -1,23 +1,23 @@
 def att(a):
     if a == 1.1:
-        att = "(N)orth."
+        attin = "(N)orth."
     if a == 1.2:
-        att = "(N)orth or (E)ast or (S)outh."
+        attin = "(N)orth or (E)ast or (S)outh."
     if a == 1.3:
-        att = "(E)ast or (S)outh."
+        attin = "(E)ast or (S)outh."
     if a == 2.1:
-        att = "(N)orth."
+        attin = "(N)orth."
     if a == 2.2:
-        att = "(S)outh or (W)est."
+        attin = "(S)outh or (W)est."
     if a == 2.3:
-        att = "(E)ast or (W)est."
+        attin = "(E)ast or (W)est."
     if a == 3.1:
-        att = "(N)orth."
+        attin = "(N)orth."
     if a == 3.2:
-        att = "(N)orth or (S)outh."
+        attin = "(N)orth or (S)outh."
     if a == 3.3:
-        att = "(S)outh or (W)est."
-    return att
+        attin = "(S)outh or (W)est."
+    return attin
 def position_n(b):
         b == 1.1 or b == 1.2 or b == 3.2 or b == 2.1
         return b
@@ -34,13 +34,13 @@ while position != 3.1:
         print("You can travel:", att(position))
         direction = input("Direction: ").lower()
     if direction == "n":
-        if position_n:
+        if position == 1.1 or position == 1.2 or position == 3.2 or position == 2.1:
             position = position + 0.1
         else:
             print("Not a valid direction!")
             villa = villa + 1
     elif direction == "s":
-        if  position_s:
+        if  position == 1.2 or position == 1.3 or position == 2.2 or position == 3.3 or position == 3.2:
             position = position - 0.1
         else:
             print("Not a valid direction!")
