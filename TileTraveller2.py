@@ -18,12 +18,7 @@ def att(a):
     if a == 3.3:
         attin = "(S)outh or (W)est."
     return attin
-def position_n(b):
-        b == 1.1 or b == 1.2 or b == 3.2 or b == 2.1
-        return b
-def position_s(b):
-        b == 1.2 or b == 1.3 or b == 2.2 or b == 3.3 or b == 3.2
-        return b
+
 position = 1.1
 villa = 0
 while position != 3.1:
